@@ -11,11 +11,11 @@ export default function Card({
   title?: string;
   description?: string;
   isAnimated?: boolean;
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
 }>) {
   const thisClassName = twMerge(
-    `w-full max-w-md rounded-2xl border border-white/10 p-6 backdrop-blur-sm bg-white/5 ${
+    `w-md rounded-2xl border border-white/10 p-6 backdrop-blur-sm bg-white/5 ${
       isAnimated &&
       "transition-all ease-spring-elastic duration-950 active:scale-95 hover:shadow-2xl hover:shadow-black/30 hover:backdrop-blur-lg hover:bg-white/10 hover:scale-105 "
     }`,
