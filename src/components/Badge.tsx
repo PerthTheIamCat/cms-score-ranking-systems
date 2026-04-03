@@ -24,7 +24,7 @@ export default function Badge({
   label,
   children,
   className,
-  color = "dark_green",
+  color = "default",
 }: BadgeProps) {
   const thisClassName = twMerge(
     "flex items-center justify-center rounded-2xl backdrop-blur-lg w-30",
