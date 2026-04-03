@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Card from "@/components/Card";
+import Badge from "@/components/Badge";
 import Background from "@/components/Background";
 
 const routes = [
@@ -37,6 +38,11 @@ export default function Home() {
             </Card>
           </Link>
         ))}
+        <Badge label="test" color="dark_green" />
+        <Badge label="test" color="light_green" />
+        <Badge label="test" color="default" />
+        <Badge label="test" color="red" />
+        <Badge label="test" color="yellow" />
       </div>
     </main>
   );
